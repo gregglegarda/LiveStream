@@ -8,32 +8,49 @@ def main():
 
 
 def layout():
-    layout = header() + "</br> " + body() + "</br> " + footer() + "</br> " + video()
+    layout = header() + news_container() + radio_container() + body()  + footer()
     return layout
 
 def header():
-    from header import header
+    from scripts.header import header
     header1 = header()
     header = header1.header_samples()
-    return header
+    return header  + "</br> "
 
 
 def body():
-    from body import body
+    from scripts.body import body
     body1 = body()
     body = body1.body_samples()
-    return body
+    return body + "</br> "
 
 
+def news_container():
+    from scripts.channels.news import abscbn
+    video1 = abscbn.video()
+    video = video1.video_samples()
+    return video + "</br> " + "</br> "
+
+
+
+def radio_container():
+    from scripts.channels.radio import opmlovesongs
+    from scripts.channels.radio import teleradyo
+
+    v1 = opmlovesongs.video()
+    video1 = v1.video_samples()
+
+    v2 = teleradyo.video()
+    video2 = v2.video_samples()
+
+
+    ###concatenate as a string
+    video = video1 +" " + video2
+    return video + "</br> "
 
 def footer():
-    from footer import footer
+    from scripts.footer import footer
     footer1 = footer()
     footer = footer1.footer_samples()
-    return footer
+    return footer + "</br> "
 
-def video():
-    from video import video
-    video1 = video()
-    video = video1.video_samples()
-    return video
