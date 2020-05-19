@@ -4,5 +4,5 @@ class header():
         x="code went through header class"
         print(x)
     def header_samples(self):
-        header1 = "#HOME# " + " EXPLORE " + " NEWS " + " RADIO " + " MUSIC " + "|                      Search |"
+        header1 = "#HOME# " + " EXPLORE " + " NEWS [international, national,regional, local, radio] "  + " ENTERTAINMENT [music, art, fashion, comedy, celebrity, food, travel, animals, fitness, tech]" + " SPORTS " + "|=====================Search |"
         return header1
