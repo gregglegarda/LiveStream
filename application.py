@@ -14,6 +14,7 @@ graph = tf.get_default_graph()
 
 @app.route('/')
 def hello_world():
+    return "hello world"
     return """
     <!DOCTYPE html>
     <html lang="en">
