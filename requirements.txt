@@ -31,7 +31,7 @@ imutils==0.5.3
 ipaddress==1.0.22
 isort==4.3.21
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 lazy-object-proxy==1.4.3
